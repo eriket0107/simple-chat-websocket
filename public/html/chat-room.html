@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script defer src="../js/chat-room.js"></script>
+</head>
+
+<body>
+  <div id="root">
+
+    <div id="roomName" style="display: flex; gap: 16px; color: white; flex-direction: column; font-size: 32px;">
+    </div>
+
+    <button id="logout" class="logout-btn">
+      Logout
+    </button>
+
+    <form action=" /" id="chatForm">
+      <ul id="messages" class="messages">
+      </ul>
+      <input type="text" id="newMessage" name="message" placeholder="Type your message" />
+      <button type="button" class="button" id="sendBtn">Send</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

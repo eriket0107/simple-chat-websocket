@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lobby</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <h1>Chat</h1>
+    <form action="/public/html/chat-room.html" id="chatForm">
+      <label for="rooms" class="label-select">Choose a room</label>
+      <select id="rooms" name="room" class="select">
+        <option value="node">Node</option>
+        <option value="react">React</option>
+        <option value="css">CSS</option>
+        <option value="html">HTML</option>
+        <option value="js">JS</option>
+      </select>
+
+      <input type="text" id="name" name="name" placeholder="Type your name" />
+      <button type="submit" class="button" id="send">Start</button>
+    </form>
+
+  </div>
+</body>
+
+</html>
